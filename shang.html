@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队足迹：上海——寻迹梅庵实践团</title>
+    <link rel="shortcut icon" href="bitbug_favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/animate.js"></script>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?z2xoog');
+            src: url('fonts/icomoon.eot?z2xoog#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?z2xoog') format('truetype'),
+                url('fonts/icomoon.woff?z2xoog') format('woff'),
+                url('fonts/icomoon.svg?z2xoog#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        .readCont {
+            padding-top: 0;
+        }
+
+        .readCont img {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .readCont .p_detail {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+
+        .readCont .p_indent {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部模块 -->
+    <div class="top" id="top">
+        <div class="left">
+            <p>东南大学仪器科学与工程学院 寻迹梅庵实践团</p>
+        </div>
+        <div class="timer"></div>
+        <div class="right1" id="r1"></div>
+        <div class="right2" id="r2"></div>
+        <div class="right3" id="r3"></div>
+        <div class="content1" id="c1">
+            <div class="picture"></div>
+            <p>官方微信</p>
+        </div>
+        <div class="content2" id="c2">
+            <div class="picture"></div>
+            <p>官方微博</p>
+        </div>
+        <div class="search" id="search">
+            <button class="btn btn-danger" style="font-size:14px;border-radius: 0;">搜索</button>
+            <input type="text" class="form-control" style="font-size: 14px;border-radius: 0;" placeholder="团二大">
+        </div>
+    </div>
+    <!-- 各种徽模块 -->
+    <!-- <div class="logo1"></div> -->
+    <!-- <div class="logo2"></div> -->
+    <!-- <div class="logo3"></div> -->
+    <div class="logo4"></div>
+    <!-- 主体模块 -->
+    <div class="w">
+        <div class="body">
+            <p>寻 迹 梅 庵 ，薪 火 相 传</p>
+            <div class="header"></div>
+            <!-- <header>
+                <div class="team"></div>
+                <div class="pic"></div>
+                <div class="search">
+                    <div class="up row height d-flex justify-content-center align-items-center"
+                        style="margin-top: 0px;">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control"
+                            style="width:160px;height:35px;font-size: 14px;border-radius: 0;" placeholder="团二大">
+                        <button class="btn btn-danger" style="font-size:14px;border-radius: 0;">搜索</button>
+                    </div>
+                    <div class="middle">
+                        <ul>
+                            <li><a href="#" class="text-danger">热搜</a></li>
+                            <li><a href="#">团二大</a></li>
+                            <li><a href="#">中国青年</a></li>
+                            <li><a href="#">VR展馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <a href="https://zhtj.youth.cn/zhtj/" target="_blank">
+                            <img src="images/zhtj.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+            </header> -->
+        </div>
+    </div>
+    <!-- 导航栏模块 -->
+    <nav>
+        <canvas id="flagCanvas" class="flag"></canvas>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active " style="font-size: 16px;">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="team.html" class="nav-link active" style="font-size: 16px;">
+                    <span>团队介绍</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="trace.html" class="nav-link active" style="font-size: 16px;">
+                    <span>重走团二大</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.720yun.com/vr/658jOzey5w8" class="nav-link active" style="font-size: 16px;"
+                    target="_blank">
+                    <span>智慧梅庵</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="footer.html" class="nav-link active" style="font-size: 16px;">
+                    <span>团队足迹</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active" style="font-size: 16px;" target="_blank">
+                    <span>视觉梅庵</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="achievements.html" class="nav-link active" style="font-size: 16px;">
+                    <span>团队成就</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="introduction.html" class="nav-link active" style="font-size: 16px;">
+                    <span>关于我们</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 内容模块 -->
+    <div class="cont">
+        <div class="read_box">
+            <div class="title_bar">
+                <h2 class="title_bg">团队足迹——上海</h2>
+                <div class="title_crumbs">
+                    您现在的位置:&nbsp;
+                    <a class="LinkPath" href="index.html">首页</a>
+                    &nbsp;&gt;&gt;&nbsp;
+                    <a class="LinkPath" href="footer.html">团队足迹</a>
+                    &nbsp;&gt;&gt;&nbsp;
+                    <a class="LinkPath" href="shang.html">上海</a>
+                    &nbsp;&gt;&gt;&nbsp;正文
+                </div>
+                <s></s>
+            </div>
+            <div class="readCont">
+                <div class="news_row">
+                    <div class="left">
+                        <a href="https://mp.weixin.qq.com/s/p48B85hyhFEr3Cd8iyAllw" target="_blank">
+                            <div class="pic"
+                                style="background: url(upload/中国青年/QQ图片20230810220652.jpg) no-repeat center center;background-size: cover;">
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://mp.weixin.qq.com/s/p48B85hyhFEr3Cd8iyAllw" target="_blank">
+                        <div class="right">
+                            <h4>寻迹梅庵实践团 | 寻根溯源，实践团调研《中国青年》编辑部旧址</h4>
+                            <div class="news_detail">
+                                1923年8月中国社会主义青年团第二次全国代表大会（以下简称“团二大”）在东南大学举行，10月团中央的机关刊物《中国青年》在上海创刊，主编恽代英。1924年春，《中国青年》迁至淡水路66弄4号。《中国青年》是“团二大”的产物，是贯彻“团二大”中团中央的指示的重要刊物。
+                            </div>
+                            <div class="news_bottom">
+                                <span class="date">2023/8/13</span>
+                                <span class="num">633</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_row">
+                    <div class="left">
+                        <a href="https://mp.weixin.qq.com/s/xr_-0de8yFM3IgIsIHAvow" target="_blank">
+                            <div class="pic"
+                                style="background: url(upload/中共一大/1691677659084.jpeg) no-repeat center center;background-size: cover;">
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://mp.weixin.qq.com/s/xr_-0de8yFM3IgIsIHAvow" target="_blank">
+                        <div class="right">
+                            <h4>寻迹梅庵实践团 | 寻根溯源，实践团调研中共一大纪念馆</h4>
+                            <div class="news_detail">
+                                1921年7月，中国共产党第一次全国代表大会（以下简称“中共一大”）在上海召开，大会的召开标志着中国共产党的正式成立，这是开天辟地的大事变。2023年8月10日，为寻根溯源，重温“中共一大”历史，体会建党时的峥嵘岁月，实践团前往上海市对中国共产党第一次全国代表大会纪念馆（以下简称“中共一大纪念馆”）进行了实地调研。
+                            </div>
+                            <div class="news_bottom">
+                                <span class="date">2023/8/14</span>
+                                <span class="num">906</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_row">
+                    <div class="left">
+                        <a href="https://mp.weixin.qq.com/s/CI_ktLcEAaU3zCKJCx5y4A" target="_blank">
+                            <div class="pic"
+                                style="background: url(upload/中共四大/1691677685652.jpeg) no-repeat center center;background-size: cover;">
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://mp.weixin.qq.com/s/CI_ktLcEAaU3zCKJCx5y4A" target="_blank">
+                        <div class="right">
+                            <h4>寻迹梅庵实践团 | 寻根溯源，实践团调研中共四大纪念馆</h4>
+                            <div class="news_detail">
+                                1925年1月，中国共产党第四次全国代表大会（以下简称“中共四大”）在上海召开，本次会议明确提出了无产阶级在民主革命中的领导权和工农联盟问题。2023年8月10日，为寻根溯源，重温“中共四大”历史，实践团前往上海市对中共四大纪念馆进行了实地调研。
+                            </div>
+                            <div class="news_bottom">
+                                <span class="date">2023/8/15</span>
+                                <span class="num">635</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_row">
+                    <div class="left">
+                        <a href="https://mp.weixin.qq.com/s/8X6u4-00053ADoF5JztACQ" target="_blank">
+                            <div class="pic"
+                                style="background: url(upload/团中央机关/微信图片_20230827160811.jpg) no-repeat center center;background-size: cover;">
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://mp.weixin.qq.com/s/8X6u4-00053ADoF5JztACQ" target="_blank">
+                        <div class="right">
+                            <h4>寻迹梅庵实践团 | 寻根溯源，实践团调研团中央机关旧址纪念馆</h4>
+                            <div class="news_detail">
+                                1920年8月，在中国共产党早期组织的领导下，经上海共产主义小组领导人陈独秀倡导，俞秀松、李汉俊、陈望道等8名青年在渔阳里（今团中央机关旧址所在地）发起成立了中国第一个社会主义青年团——上海社会主义青年团。9月，上海共产主义小组在渔阳里开办“外国语”学社，培养了第一批共青团员。这是团组织在青运史上的首次亮相，揭开了团史、青运史的新篇章。
+                            </div>
+                            <div class="news_bottom">
+                                <span class="date">2023/8/16</span>
+                                <span class="num">708</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_row">
+                    <div class="left">
+                        <a href="https://mp.weixin.qq.com/s/oUKUaZ8YzVQTED2N1AXBFw" target="_blank">
+                            <div class="pic"
+                                style="background: url(upload/中共二大/QQ图片20230827154438.jpg) no-repeat center center;background-size: cover;">
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://mp.weixin.qq.com/s/oUKUaZ8YzVQTED2N1AXBFw" target="_blank">
+                        <div class="right">
+                            <h4>寻迹梅庵实践团 | 寻根溯源，实践团调研中共二大会址纪念馆</h4>
+                            <div class="news_detail">
+                                1922年7月，中国共产党第二次全国代表大会（以下简称“中共大二”）在上海召开，大会第一次明确地提出了反帝反封建的民主革命纲领，首次提出“中国共产党万岁！”。2023年8月11日，为寻根溯源，重温“中共二大”历史，体会建党时的峥嵘岁月，实践团前往上海市对中国共产党第二次全国代表大会会址纪念馆（以下简称“中共二大会址纪念馆”）进行了实地调研。
+                            </div>
+                            <div class="news_bottom">
+                                <span class="date">2023/8/17</span>
+                                <span class="num">674</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部模块 -->
+    <div class="footer">
+        <p><span>版权所有 © 东南大学仪器科学与工程学院</span></p>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/flag.js"></script>
+</body>
+
+</html>

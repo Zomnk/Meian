@@ -1,0 +1,45 @@
+.mainbox {
+    position: relative;
+    min-width: 1024px;
+    max-width: 1920px;
+    padding: 0.125rem 0.125rem 0;
+    display: flex;
+    /* background-color: #00186E; */
+    /* background-color: red; */
+}
+
+.map {
+    /* position: relative; */
+    height: 400px;
+    background-color: red;
+}
+
+.map .chart {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: 5;
+    height: 800px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}

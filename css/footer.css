@@ -1,0 +1,152 @@
+.news_row {
+    width: 100%;
+    height: 195px;
+    /* background-color: purple; */
+    box-shadow: 0px 0px 8px #eee;
+    margin-bottom: 15px;
+}
+
+.news_row a {
+    width: 100%;
+    height: 100%;
+}
+
+/* .news_row a:hover .right {
+    transition: all 0.5s ease-in-out;
+    background-color: #dc2c24;
+} */
+
+.news_row a:hover {
+    color: #333;
+}
+
+.news_row a:hover .right h4 {
+    color: #dc2c24;
+
+}
+
+/* .news_row a:hover .right .news_detail {
+    color: #fff;
+}
+
+.news_row a:hover .right .news_bottom .date {
+    color: #fff;
+}
+
+.news_row a:hover .right .news_bottom .num {
+    color: #fff;
+}
+
+.news_row a:hover .right .news_bottom .more {
+    color: #fff;
+} */
+
+.news_row .left {
+    float: left;
+    width: 300px;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.news_row .left a {
+    display: block;
+    width: 260px;
+    height: 165px;
+    margin: 15px auto 0;
+    overflow: hidden;
+    color: #333;
+}
+
+.news_row .left a .pic {
+    width: 100%;
+    height: 100%;
+    background: url(../upload/act2/微信图片_20230731154942.png) no-repeat center center;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.news_row .left a:hover .pic {
+    transform: scale(1.2);
+}
+
+.news_row .right {
+    float: left;
+    width: 830px;
+    height: 180px;
+}
+
+.news_row .right h4 {
+    /* float: left; */
+    display: block;
+    width: 810px;
+    height: 30px;
+    /* background-color: lawngreen; */
+    margin: 15px 0px 15px 10px;
+    /* 这个单词的意思是：如果文字显示不开，自动换行 */
+    /* white-space: normal; */
+    /* 1.这个单词的意思是：如果文字显示不开，仍强制一行显示 */
+    white-space: nowrap;
+    /* 2.溢出的部分隐藏起来 */
+    overflow: hidden;
+    /* 3.文字溢出的时候，用省略号显示 */
+    text-overflow: ellipsis;
+    line-height: 25px;
+    font-weight: bold;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.news_row .right .news_detail {
+    /* float: left; */
+    width: 810px;
+    height: 60px;
+    margin: 5px 0 33px 10px;
+    /* background-color: #fff; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-line-clamp: 2;
+    /* 设置或检索伸缩盒对象的子元素的排列方式 */
+    -webkit-box-orient: vertical;
+    font-size: 13px;
+    padding-left: 5px;
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.news_row .right .news_bottom {
+    position: relative;
+    width: 810px;
+    height: 25px;
+    /* background-color: greenyellow; */
+    margin: 0px 0px 8px 10px;
+}
+
+.news_row .right .news_bottom .date {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-weight: bold;
+}
+
+.news_row .right .news_bottom .num {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+.news_row .right .news_bottom .num::before {
+    position: absolute;
+    left: -20px;
+    font-family: 'icomoon';
+    content: "";
+}
+
+.news_row .right .news_bottom .more {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-weight: bold;
+}

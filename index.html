@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 温馨提示：本网站只适合全屏预览，并未设置响应式布局 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻迹梅庵，薪火相传</title>
+    <meta name="description"
+        content="寻迹梅庵，薪火相传，东南大学仪器科学与工程学院“寻迹梅庵”实践团将再次启程，在2022年追寻“团二大”代表红色足迹的基础上，继续深入挖掘“团二大”历史的“前因后果”和时代细节，并以数字化赋能的方式跨越时空对话历史，将这段光辉岁月生动呈现。" />
+    <!-- 关键字 -->
+    <meta name="keywords" content="梅庵，寻迹梅庵实践团，团二大，东南大学，仪器科学与工程学院，薪火相传" />
+    <link rel="shortcut icon" href="bitbug_favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/map.css">
+    <script src="js/animate.js"></script>
+    <!-- <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script> -->
+
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?z2xoog');
+            src: url('fonts/icomoon.eot?z2xoog#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?z2xoog') format('truetype'),
+                url('fonts/icomoon.woff?z2xoog') format('woff'),
+                url('fonts/icomoon.svg?z2xoog#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        .w .body {
+            height: 120px;
+        }
+
+        .search {
+            /* visibility: hidden; */
+            display: none;
+            position: absolute;
+            top: 51px;
+            right: 0px;
+            width: 600px;
+            height: 35px;
+            z-index: 3;
+        }
+
+        .search input {
+            float: right;
+            width: 300px;
+            height: 100%;
+        }
+
+        .search .btn {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部模块 -->
+    <div class="top" id="top">
+        <div class="left">
+            <p>东南大学仪器科学与工程学院 寻迹梅庵实践团</p>
+        </div>
+        <div class="timer"></div>
+        <div class="right1" id="r1"></div>
+        <div class="right2" id="r2"></div>
+        <div class="right3" id="r3"></div>
+        <div class="content1" id="c1">
+            <div class="picture"></div>
+            <p>官方微信</p>
+        </div>
+        <div class="content2" id="c2">
+            <div class="picture"></div>
+            <p>官方微博</p>
+        </div>
+        <div class="search" id="search">
+            <button class="btn btn-danger" style="font-size:14px;border-radius: 0;">搜索</button>
+            <input type="text" class="form-control" style="font-size: 14px;border-radius: 0;" placeholder="团二大">
+        </div>
+    </div>
+    <!-- 各种徽模块 -->
+    <!-- <div class="logo1"></div> -->
+    <!-- <div class="logo2"></div> -->
+    <!-- <div class="logo3"></div> -->
+    <div class="logo4"></div>
+    <!-- 主体模块 -->
+    <div class="w">
+        <div class="body">
+            <p>寻 迹 梅 庵 ，薪 火 相 传</p>
+            <div class="header"></div>
+            <!-- <header>
+                <div class="team"></div>
+                <div class="pic"></div>
+                <div class="search">
+                    <div class="up row height d-flex justify-content-center align-items-center"
+                        style="margin-top: 0px;">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control"
+                            style="width:160px;height:35px;font-size: 14px;border-radius: 0;" placeholder="团二大">
+                        <button class="btn btn-danger" style="font-size:14px;border-radius: 0;">搜索</button>
+                    </div>
+                    <div class="middle">
+                        <ul>
+                            <li><a href="#" class="text-danger">热搜</a></li>
+                            <li><a href="#">团二大</a></li>
+                            <li><a href="#">中国青年</a></li>
+                            <li><a href="#">VR展馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <a href="https://zhtj.youth.cn/zhtj/" target="_blank">
+                            <img src="images/zhtj.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+            </header> -->
+        </div>
+    </div>
+    <!-- 导航栏模块 -->
+    <nav>
+        <canvas id="flagCanvas" class="flag"></canvas>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active " style="font-size: 16px;">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="team.html" class="nav-link active" style="font-size: 16px;">
+                    <span>团队介绍</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="trace.html" class="nav-link active" style="font-size: 16px;">
+                    <span>重走团二大</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.720yun.com/vr/658jOzey5w8" class="nav-link active" style="font-size: 16px;"
+                    target="_blank">
+                    <span>智慧梅庵</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="footer.html" class="nav-link active" style="font-size: 16px;">
+                    <span>团队足迹</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active" style="font-size: 16px;" target="_blank">
+                    <span>视觉梅庵</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="achievements.html" class="nav-link active" style="font-size: 16px;">
+                    <span>团队成就</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="introduction.html" class="nav-link active" style="font-size: 16px;">
+                    <span>关于我们</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 轮播图模块 -->
+    <div class="picture w">
+        <div class="focus">
+            <!-- 左侧按钮 -->
+            <a href="javascript:;" class="arrow-l">&lt;</a>
+            <!-- 右侧按钮 -->
+            <a href="javascript:;" class="arrow-r">&gt;</a>
+            <!-- 核心的滚动区域 -->
+            <ul>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/WE4mJevYJxwMqXzrkVXqKQ" target="_blank">
+                        <img src="upload/团一大/QQ图片20230808182607.jpg" alt="" width="700px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/xr_-0de8yFM3IgIsIHAvow" target="_blank">
+                        <img src="upload/中共一大/1691677659084.jpeg" alt="" width="700px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/ojcf1LDTbX7JQvt4yZCyRw" target="_blank">
+                        <img src="upload/中共三大/QQ图片20230808185551.jpg" alt="" width="700px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/58nDXJt6pv4xwbtHyQPamw" target="_blank">
+                        <img src="upload/act1/20230728170418.jpg" alt="" width="700px">
+                    </a>
+                </li>
+            </ul>
+            <!-- 小圆圈 -->
+            <ol class="circle"></ol>
+        </div>
+        <div class="news">
+            <div class="title">
+                <h5>新闻快报</h5>
+                <span><a href="#">更多</a></span>
+            </div>
+            <ul>
+                <li class="li">
+                    <a href="https://mp.weixin.qq.com/s/9uw_1dEs9jKuddPJCGUbpw" class="news_a" target="_blank">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="r_top">
+                                <h6>时空对话团二大，薪火相传再启程</h6>
+                            </div>
+                            <div class="r_middle text-muted">
+                                “寻迹梅庵”实践团将再次启程，在2022年追寻“团二大”代表红色足迹的基础上，继续深入挖掘“团二大”历史的“前因后果”和时代细节，并以数字化赋能的方式跨越时空对话历史，将这段光辉岁月生动呈现。
+                            </div>
+                            <div class="r_bottom text-dark">
+                                <div class="date">2023/6/23</div>
+                                <p class="detail"> &nbsp;189</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="https://mp.weixin.qq.com/s/pHeushWxlT3jaVvqTssThw" class="news_a" target="_blank">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="r_top">
+                                <h6>回溯团二大历史，重温跟党走初心</h6>
+                            </div>
+                            <div class="r_middle text-muted">
+                                红色资源是我们党艰辛而辉煌奋斗历程的见证，是最宝贵的精神财富。红色血脉是中国共产党政治本色的集中体现，是新时代中国共产党人的精神力量源泉。
+                            </div>
+                            <div class="r_bottom text-dark">
+                                <div class="date">2023/7/2</div>
+                                <p class="detail"> &nbsp;164</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="https://mp.weixin.qq.com/s/OnQWQ8Sv2KQH34khmpUjjQ" class="news_a" target="_blank">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="r_top">
+                                <h6>数字梅庵建设：精雕细琢，以匠心铸精品</h6>
+                            </div>
+                            <div class="r_middle text-muted">
+                                经过数十小时的测量与绘制，我们得到了一张较为准确的3D草图，这之后便是这次计划的主体，也就是正式建模过程。
+                            </div>
+                            <div class="r_bottom text-dark">
+                                <div class="date">2023/7/29</div>
+                                <p class="detail"> &nbsp;306</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="https://mp.weixin.qq.com/s/PTM8aTYIyt4pznmpvKeTwQ" class="news_a" target="_blank">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="r_top">
+                                <h6>数字梅庵建设：探索创新，精益求精</h6>
+                            </div>
+                            <div class="r_middle text-muted">
+                                麻雀虽小,五脏俱全。梅庵占地面积虽小，但内饰极为丰富，内部一眼望去，展示物品目不暇接。再加上房间面积小，所拍摄照片全是近景，甚至一张桌子都分两三张照片。繁杂的内容加上散乱的照片，整体效果及其不好把握，给建模过程增加了许多难度，因此，剩余的80%的内容全部都是内饰上的工作。
+                            </div>
+                            <div class="r_bottom text-dark">
+                                <div class="date">2023/7/30</div>
+                                <p class="detail"> &nbsp;324</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 楼层模块 -->
+    <div class="floor w" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <!-- 1楼团队介绍 -->
+        <div class="box_hd" id="f1">
+            <h3>团队介绍</h3>
+            <div class="tab_list">
+                <ul>
+                    <li><a href="team.html">更多</a></li>
+                </ul>
+            </div>
+            <div class="bn3"></div>
+        </div>
+        <div class=" box_bd" style="background-color: #fff;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/zhong.jpg" alt="" /></a>
+                        <p>仲点石</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/fang.jpg" alt="" /></a>
+                        <p>方子瑜</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/bing.jpg" alt="" /></a>
+                        <p>周奕冰</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/zhi.jpg" alt="" /></a>
+                        <p>支美琪</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/qian.jpg" alt="" /></a>
+                        <p>钱程</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/jie.jpg" alt="" /></a>
+                        <p>周赟杰</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/tu.jpg" alt="" /></a>
+                        <p>屠沈清格</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="upload/members/hao.jpg" alt="" /></a>
+                        <p>周自豪</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 2楼重走团二大 -->
+        <div class="box_hd" id="f2">
+            <h3>重走团二大</h3>
+            <div class="tab_list">
+                <ul>
+                    <li><a href="trace.html">更多</a></li>
+                </ul>
+            </div>
+            <div class="bn3" style="left: 98px;"></div>
+        </div>
+        <div class="box_bd" style="height: 390px;background-color: #fff;">
+            <img src="images/timer_line.png" alt="" width="75%" class="timerline">
+            <a href="tuanshi.html" class="logo_1"></a>
+            <a href="qidian.html" class="logo_2"></a>
+            <a href="tuanyida.html" class="logo_3"></a>
+            <a href="sanda.html" class="logo_4"></a>
+            <a href="tuanerda.html" class="logo_5"></a>
+            <a href="qingnian.html" class="logo_6"></a>
+            <a href="sida.html" class="logo_7"></a>
+            <a href="https://r.xiumi.us/stage/v5/5HXOn/470801619" class="logo_8"></a>
+        </div>
+        <!-- 3楼智慧梅庵 -->
+        <div class="box_hd" id="f3">
+            <h3>沉浸式梅庵体验</h3>
+            <div class="tab_list">
+                <ul>
+                    <li><a href="https://www.720yun.com/vr/658jOzey5w8" target="_blank">更多</a></li>
+                </ul>
+            </div>
+            <div class="bn3" style="left: 138px;">
+            </div>
+        </div>
+        <div class="box_bd" style="width: 700px;height: 500px;">
+            <iframe src="https://www.720yun.com/vr/658jOzey5w8" frameborder="no" width="700" height="500"></iframe>
+        </div>
+        <!-- 4楼团队足迹 -->
+        <div class="box_hd" id="f4">
+            <h3>团队足迹</h3>
+            <div class="tab_list">
+                <ul>
+                    <li><a href="footer.html">更多</a></li>
+                </ul>
+            </div>
+            <div class="bn3"></div>
+        </div>
+        <div class="box_bd" style="height: 600px;background: #fff;margin: 60px 0 100px">
+            <section class="mainbox">
+                <div class="map">
+                    <div class="chart"></div>
+                </div>
+            </section>
+            <a href="guang.html"><span class="guang" style="z-index: 999;" title="广州"></span></a>
+            <a href="shang.html"><span class="shang" style="z-index: 999;" title="上海"></span></a>
+            <a href="nan.html"><span class="nan" style="z-index: 999;" title="南京"></span></a>
+        </div>
+        <!-- 5楼视觉梅庵 -->
+        <div class="box_hd" id="f5">
+            <h3>视觉梅庵</h3>
+            <div class="tab_list">
+                <ul>
+                    <li><a href="#">更多</a></li>
+                </ul>
+            </div>
+            <div class="bn3"></div>
+        </div>
+        <div class="box_bd" style="width: 1230px;margin-top: 40px;background-color: #fff;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" style="width: 100%;height: 100%;">
+                            <img src="upload/meian/mei1.jpg" alt="" style="width: 100%;height: 100%;" />
+                        </a>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" style="width: 100%;height: 100%;">
+                            <img src="upload/meian/video1.png" alt="" style="width: 100%;height: 100%;" />
+                        </a>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" style="width: 100%;height: 100%;">
+                            <img src="upload/meian/video2.png" alt="" style="width: 100%;height: 100%;" />
+                        </a>
+                        <div class="mask"></div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 6楼团队成就 -->
+        <div class="box_hd" id="f6">
+            <h3>团队成就</h3>
+            <div class="tab_list">
+                <ul>
+                    <li><a href="achievements.html">更多</a></li>
+                </ul>
+            </div>
+            <div class="bn3"></div>
+        </div>
+        <div class="box_bd" style="background-color: #fff;">
+            <ul class="f6">
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/WE4mJevYJxwMqXzrkVXqKQ" target="_blank">
+                        <div style="width: 100%;
+                        height: 200px;overflow: hidden;">
+                            <div class="news_bg"></div>
+                        </div>
+                        <div class="news_con">
+                            <div class="news_title">社会实践基地+1！东南大学仪科学院与广东革命历史博物馆社会实践基地签约揭牌仪式成功举办！</div>
+                            <div class="news_view">
+                                <span class="date">2023/8/10</span>
+                                <span class="num">889</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/ojcf1LDTbX7JQvt4yZCyRw" target="_blank">
+                        <div style="width: 100%;
+                        height: 200px;overflow: hidden;">
+                            <div class="news_bg"></div>
+                        </div>
+                        <div class="news_con">
+                            <div class="news_title">寻迹梅庵实践团 | 寻根溯源，实践团调研中共三大纪念馆</div>
+                            <div class="news_view">
+                                <span class="date">2023/8/12</span>
+                                <span class="num">661</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/xr_-0de8yFM3IgIsIHAvow" target="_blank">
+                        <div style="width: 100%;
+                        height: 200px;overflow: hidden;">
+                            <div class="news_bg"></div>
+                        </div>
+                        <div class="news_con">
+                            <div class="news_title">寻迹梅庵实践团 | 寻根溯源，实践团调研中共一大纪念馆</div>
+                            <div class="news_view">
+                                <span class="date">2023/8/14</span>
+                                <span class="num">765</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mp.weixin.qq.com/s/oUKUaZ8YzVQTED2N1AXBFw" target="_blank">
+                        <div style="width: 100%;height: 200px;overflow: hidden;">
+                            <div class="news_bg"></div>
+                        </div>
+                        <div class="news_con">
+                            <div class="news_title">寻迹梅庵实践团 | 寻根溯源，实践团调研中共二大会址纪念馆</div>
+                            <div class="news_view">
+                                <span class="date">2023/8/17</span>
+                                <span class="num">624</span>
+                                <span class="more">查看更多+</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 尾部模块 -->
+    <div class="footer">
+        <p><span>版权所有 © 东南大学仪器科学与工程学院</span></p>
+    </div>
+    <!-- 侧边栏模块 -->
+    <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#f1">团队介绍</a>
+        <a class="list-group-item list-group-item-action" href="#f2">重走团二大</a>
+        <a class="list-group-item list-group-item-action" href="#f3">智慧梅庵</a>
+        <a class="list-group-item list-group-item-action" href="#f4">团队足迹</a>
+        <a class="list-group-item list-group-item-action" href="#f5">视觉梅庵</a>
+        <a class="list-group-item list-group-item-action" href="#f6">团队成就</a>
+        <a class="list-group-item list-group-item-action goBack">返回顶部</a>
+    </div>
+
+    <!-- JS模块 -->
+    <script src="js/common.js"></script>
+    <!-- 旗子飘动 -->
+    <script src="js/flag.js"></script>
+    <!-- 轮播图 -->
+    <script src="js/top_lunbo.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <!-- 团队人员轮播图 -->
+    <script src="js/bottom_lunbo.js"></script>
+    <!-- 数据可视化 -->
+    <!-- <script src="js/flexible.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/myMap.js"></script>
+    <!-- 侧边滚动栏 -->
+    <script src="js/side.js"></script>
+</body>
+
+</html>

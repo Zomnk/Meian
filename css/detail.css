@@ -1,0 +1,148 @@
+a {
+    color: #333;
+}
+
+.w .body {
+    height: 120px;
+}
+
+.search {
+    /* visibility: hidden; */
+    display: none;
+    position: absolute;
+    top: 51px;
+    right: 0px;
+    width: 600px;
+    height: 35px;
+    z-index: 3;
+}
+
+.search input {
+    float: right;
+    width: 300px;
+    height: 100%;
+}
+
+.search .btn {
+    float: right;
+}
+
+.cont {
+    margin: 0 auto;
+    width: 1250px;
+    /* height: 1250px; */
+    /* background-color: lightblue; */
+    font-family: "微软雅黑";
+    color: #333;
+    padding: 10px 0;
+}
+
+.read_box {
+    margin: 0 auto;
+    width: 1150px;
+    height: 100%;
+    /* background-color: lightyellow; */
+    padding: 20px 0;
+}
+
+.title_bar {
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    /* background-color: pink; */
+}
+
+.title_bg {
+    float: left;
+    min-width: 110px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    background: #ff3513;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.title_bg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -5px;
+    height: 38px;
+    top: 0px;
+    width: 5px;
+    background: url(../images/title_bg.png) no-repeat right top;
+}
+
+.title_crumbs {
+    float: right;
+    color: #888;
+    line-height: 15px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+.title_crumbs a {
+    color: #333;
+}
+
+.title_crumbs a:hover {
+    color: #ed211f;
+}
+
+.title_bar s {
+    display: block;
+    position: absolute;
+    height: 2px;
+    background: #db1628;
+    overflow: hidden;
+    width: 100%;
+    right: 0px;
+    left: 50px;
+    bottom: 23px;
+    _bottom: 15px;
+    z-index: 2;
+}
+
+.read_box h1 {
+    /* position: absolute; */
+    display: block;
+    padding: 26px 10px 0px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.list_news {
+    /* background: #fbfbfb; */
+    /* border-top: 1px dashed #a4a4a4; */
+    /* border-bottom: 1px dashed #a4a4a4; */
+    padding-bottom: 15px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    color: #757577;
+}
+
+.readCont {
+    /* height: 100%; */
+    padding: 20px 10px;
+    line-height: 26px;
+    font-size: 16px;
+    /* background-color: skyblue; */
+}
+
+nav .nav-pills .nav-item .nav-link span {
+    line-height: 20px;
+}
